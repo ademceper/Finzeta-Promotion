@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    cursor: none;
+}
+
+/* Tüm scrollbar'ları gizler */
+* {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+  }
+  
+  *::-webkit-scrollbar {
+    display: none; /* Chrome, Safari ve diğer WebKit tabanlı tarayıcılar */
+  }
+  
