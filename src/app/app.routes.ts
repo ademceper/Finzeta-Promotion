@@ -44,7 +44,12 @@ export const routes: Routes = [
       import('./our-team/our-team.component').then((m) => m.OurTeamComponent),
   },
   {
-    path: '**', // Wildcard route
+    path: 'blog',
+    loadComponent: () =>
+      import('./blog/blog.component').then((m) => m.BlogComponent),
+  },
+  {
+    path: '**',
     loadComponent: () =>
       import('./not-found/not-found.component').then(
         (m) => m.NotFoundComponent
